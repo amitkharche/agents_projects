@@ -1,0 +1,4 @@
+sender,subject,body,label
+alice@example.com,Meeting request,"Hi, Can we meet tomorrow at 3pm to discuss project timelines?",meeting
+bob@example.com,Monthly Report,Please find attached the monthly performance report.,report
+charlie@example.com,Lunch plans,Are you free for lunch on Friday?,personal
