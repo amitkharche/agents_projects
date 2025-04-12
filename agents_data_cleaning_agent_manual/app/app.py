@@ -1,7 +1,16 @@
 """
 Streamlit app with extended support for Excel, JSON, and XML files.
 """
+import os
+import sys
 
+# ✅ Dynamically add the project root to sys.path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.abspath(os.path.join(current_dir, ".."))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+# ✅ Import necessary libraries
 import streamlit as st
 import pandas as pd
 import xml.etree.ElementTree as ET
