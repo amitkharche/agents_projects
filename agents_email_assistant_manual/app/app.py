@@ -1,6 +1,16 @@
 """
 Streamlit interface for AI Email Assistant.
 """
+import os
+import sys
+
+# Dynamically add the project root to the Python path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.abspath(os.path.join(current_dir, ".."))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+# Import necessary libraries
 import streamlit as st
 import pandas as pd
 from src.email_classifier import classify_email
